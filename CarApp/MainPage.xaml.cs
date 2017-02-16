@@ -25,6 +25,21 @@ namespace CarApp
         public MainPage()
         {
             this.InitializeComponent();
+
+        }
+
+        private void trucksbutton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(trucktextBlock.Text); //0 -->0
+            value++;
+            trucktextBlock.Text = value.ToString(); // 2->"2"
+        }
+
+        private void carsbutton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(cartextBlock.Text); //0 -->0
+            value++;
+            cartextBlock.Text = value.ToString(); // 2->"2"
         }
     }
 }
